@@ -4,10 +4,10 @@
 # Then: brew tap Stecki/tools && brew install push
 
 class Push < Formula
-  desc "TODO: Short description of push"
+  desc "Send Pushover notifications from the command line"
   homepage "https://github.com/Stecki/push"
   url "https://github.com/Stecki/push.git",
-      tag: "v0.1.0"
+      tag: "v0.2.0"
   license "MIT"
 
   def install

@@ -7,7 +7,7 @@ class Push < Formula
   desc "Send Pushover notifications from the command line"
   homepage "https://github.com/Stecki/push"
   url "https://github.com/Stecki/push.git",
-      tag: "v0.3.0"
+      tag: "v0.3.1"
   license "MIT"
 
   def install

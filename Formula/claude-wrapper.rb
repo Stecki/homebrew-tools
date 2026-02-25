@@ -7,7 +7,7 @@ class ClaudeWrapper < Formula
   desc "Claude Code wrapper with notifications and terminal titles"
   homepage "https://github.com/Stecki/claude-wrapper"
   url "https://github.com/Stecki/claude-wrapper.git",
-      tag: "v0.2.0"
+      tag: "v0.3.0"
   license "MIT"
 
   depends_on "terminal-notifier" => :recommended
@@ -17,6 +17,7 @@ class ClaudeWrapper < Formula
     (share/"claude-wrapper").install Dir["bin", "lib", "libexec", "subcommands", "config"]
     bin.install_symlink share/"claude-wrapper/bin/claude-wrapper"
     bin.install_symlink share/"claude-wrapper/bin/claude-wrapper" => "cw"
+    bin.install_symlink share/"claude-wrapper/bin/claude-wrapper" => "update-claude"
     bash_completion.install "completions/claude-wrapper.bash" => "claude-wrapper"
     zsh_completion.install "completions/_claude-wrapper"
   end

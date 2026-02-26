@@ -7,7 +7,7 @@ class ClaudeWrapper < Formula
   desc "Claude Code wrapper with notifications and terminal titles"
   homepage "https://github.com/Stecki/claude-wrapper"
   url "https://github.com/Stecki/claude-wrapper.git",
-      tag: "v0.3.2"
+      tag: "v0.3.3"
   license "MIT"
 
   depends_on "terminal-notifier" => :recommended

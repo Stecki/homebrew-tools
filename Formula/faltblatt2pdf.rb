@@ -7,7 +7,7 @@ class Faltblatt2pdf < Formula
   desc "Faltblatt-Scans (Außen + Innen) in Einzelseiten und PDF umwandeln"
   homepage "https://github.com/Stecki/faltblatt2pdf"
   url "https://github.com/Stecki/faltblatt2pdf.git",
-      tag: "v0.1.1"
+      tag: "v0.2.0"
   license "MIT"
 
   depends_on "img2pdf" => :recommended

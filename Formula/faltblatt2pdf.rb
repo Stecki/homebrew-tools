@@ -4,11 +4,17 @@
 # Then: brew tap Stecki/tools && brew install faltblatt2pdf
 
 class Faltblatt2pdf < Formula
-  desc "TODO: Short description of faltblatt2pdf"
+  desc "Faltblatt-Scans (Außen + Innen) in Einzelseiten und PDF umwandeln"
   homepage "https://github.com/Stecki/faltblatt2pdf"
   url "https://github.com/Stecki/faltblatt2pdf.git",
-      tag: "v0.1.0"
+      tag: "v0.1.1"
   license "MIT"
+
+  depends_on "imagemagick"
+  depends_on "img2pdf" => :recommended
+  depends_on "ocrmypdf" => :recommended
+  depends_on "tesseract" => :recommended
+  depends_on "tesseract-lang" => :recommended
 
   def install
     # Install full tool structure under share, symlink binary

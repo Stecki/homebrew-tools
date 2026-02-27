@@ -10,11 +10,19 @@ class Faltblatt2pdf < Formula
       tag: "v0.1.1"
   license "MIT"
 
-  depends_on "imagemagick"
   depends_on "img2pdf" => :recommended
   depends_on "ocrmypdf" => :recommended
   depends_on "tesseract" => :recommended
   depends_on "tesseract-lang" => :recommended
+
+  def caveats
+    <<~EOS
+      ImageMagick is required but not declared as a dependency
+      (to avoid conflicts with imagemagick-full). Install one of:
+        brew install imagemagick
+        brew install imagemagick-full
+    EOS
+  end
 
   def install
     # Install full tool structure under share, symlink binary

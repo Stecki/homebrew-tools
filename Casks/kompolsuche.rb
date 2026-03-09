@@ -11,6 +11,7 @@ cask "kompolsuche" do
 
   caveats <<~EOS
     KomPolSuche ist nicht signiert/notarisiert.
-    Beim ersten Start: Rechtsklick → Öffnen → Öffnen bestätigen.
+    Nach der Installation Quarantine-Attribut entfernen:
+      xattr -cr /Applications/KomPolSuche.app
   EOS
 end

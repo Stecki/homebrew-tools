@@ -1,6 +1,6 @@
 cask "kompolsuche" do
-  version "1.32"
-  sha256 "24add5c7a2237cf83a4d86d0a01da2f538e0cd1ba52f901c4fb3fbbfb96389df"
+  version "1.33"
+  sha256 "05446f5b22d689eebfd42fb6451d732dede06c99a92e660523b21718f5a783d3"
 
   url "https://github.com/Stecki/homebrew-tools/releases/download/kompolsuche-v#{version}/KomPolSuche.dmg"
   name "KomPolSuche"

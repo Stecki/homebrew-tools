@@ -8,10 +8,4 @@ cask "kompolsuche" do
   homepage "https://github.com/Stecki/KomPolSuche"
 
   app "KomPolSuche.app"
-
-  caveats <<~EOS
-    KomPolSuche ist nicht signiert/notarisiert.
-    Nach der Installation Quarantine-Attribut entfernen:
-      xattr -cr /Applications/KomPolSuche.app
-  EOS
 end

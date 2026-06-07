@@ -4,8 +4,10 @@ cask "dateimanager" do
 
   url "https://github.com/Stecki/homebrew-tools/releases/download/dateimanager-v#{version}/Dateimanager.dmg"
   name "Dateimanager"
-  desc "Datei-Manager / Finder-Ersatz für macOS"
+  desc "Komfortabler Datei-Browser und Finder-Alternative"
   homepage "https://github.com/Stecki/Dateimanager"
+
+  depends_on :macos
 
   app "Dateimanager.app"
 end

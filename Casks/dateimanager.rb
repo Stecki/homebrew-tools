@@ -1,6 +1,6 @@
 cask "dateimanager" do
-  version "0.1.5"
-  sha256 "0271796072490d2310994d91acc18ff1db98a84b530561e54d4b1a4855ee6fe0"
+  version "0.1.6"
+  sha256 "92e21eacf9d3f2f41e8777a6fed86015a0c928919336976c7df7bf9d83c7351f"
 
   url "https://github.com/Stecki/homebrew-tools/releases/download/dateimanager-v#{version}/Dateimanager.dmg"
   name "Dateimanager"

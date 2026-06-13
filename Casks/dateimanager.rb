@@ -10,4 +10,10 @@ cask "dateimanager" do
   depends_on :macos
 
   app "Dateimanager.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-dr", "com.apple.quarantine", "#{appdir}/Dateimanager.app"],
+                   must_succeed: false
+  end
 end

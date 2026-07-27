@@ -7,7 +7,7 @@ class ClaudeWrapper < Formula
   desc "Claude Code wrapper with notifications and terminal titles"
   homepage "https://github.com/Stecki/claude-wrapper"
   url "https://github.com/Stecki/claude-wrapper.git",
-      tag: "v0.3.6"
+      tag: "v0.4.0"
   license "MIT"
 
   depends_on "terminal-notifier" => :recommended
@@ -31,9 +31,11 @@ class ClaudeWrapper < Formula
       To register hooks in Claude Code, run:
         claude-wrapper install
 
-      To start Claude with notifications:
-        claude-wrapper
-        cw              (short alias)
+      To check the setup:
+        claude-wrapper doctor
+
+      This tool does not start Claude — run "claude" as usual.
+      If you have an alias mapping claude to cw, remove it.
     EOS
   end
 

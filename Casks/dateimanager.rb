@@ -18,9 +18,9 @@ cask "dateimanager" do
   # gestapeltem Notarisierungs-Ticket. Ohne das xattr entfällt der Online-Check
   # komplett. Greift bei jedem install UND upgrade. must_succeed:false, weil
   # xattr ohne vorhandenes Attribut einen Fehler liefert.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args:         ["-dr", "com.apple.quarantine", "#{appdir}/Dateimanager.app"],
-                   must_succeed: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-dr", "com.apple.quarantine", "{{appdir}}/Dateimanager.app"],
+        must_succeed: false
   end
 end

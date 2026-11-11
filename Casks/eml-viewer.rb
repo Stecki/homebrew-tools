@@ -1,6 +1,6 @@
 cask "eml-viewer" do
-  version "0.3.0"
-  sha256 "6006e1fa65e5e733d9941a933bf544214c9250cc0ffa2223bfc3a5f2893bfefc"
+  version "0.4.0"
+  sha256 "d2a295686b8974f4e822f4e02ede8156c34ad165eac506480822e704058e793f"
 
   url "https://github.com/Stecki/homebrew-tools/releases/download/eml-viewer-v#{version}/EML-Viewer.dmg"
   name "EML-Viewer"
